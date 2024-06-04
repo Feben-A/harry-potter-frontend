@@ -64,7 +64,7 @@ header {
     overflow: hidden;
 
     transform-style: preserve-3d;
-    transition:all is ease-in-out;
+    transition: all 1s ease-in;
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6)
 
@@ -103,7 +103,8 @@ header {
     position: absolute;
     backface-visibility: hidden;
     background-color: white;
-    transform:rotateY(180deg);
+    transform: rotateY(180deg);
+    
 }
 
 .hide {
