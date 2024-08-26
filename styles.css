@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Griffy&display=swap');
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+* 
+{
     box-sizing: border-box;
 }
 
 body {
-    font-weight: 400;
-    font-style: normal;
-
+    
 }
 
 header {
@@ -16,19 +15,25 @@ header {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    background-color: rgba(149, 50, 50, 0.386);
+    background: rgb(190, 171, 136);
 }
 
 .harry-title {
-    font-size: 24px;
+    font-size: 35px;
+    text-align: center;
+    flex-grow: 1;
+    font-family:'Times New Roman', Times, serif;
+    color: #9c2b19;
+    font-family: "Cinzel", serif;
+    
 
 }
 
 .search {
     background-color: transparent;
     border: 1px solid;
-    padding: 5px 5px;
-    border-radius: 7px;
+    padding: 5px 8px;
+    border-radius: 30px;
     font-size: 1rem;
     justify-content: flex-end;
 }
@@ -83,19 +88,32 @@ main {
     overflow: hidden;
     backface-visibility: hidden;
     border-radius: 20px;
+    border: 10px solid #3C231B ;
 }
 
 .front {
     backface-visibility: hidden;
-    background-color: lightsalmon;
+    background-color: #3C231B;
     text-align: center;
+    line-height: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .back {
     position: absolute;
     backface-visibility: hidden;
-    background-color: lightsalmon;
     transform: rotateY(180deg);
+    line-height: 35px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.back h2{
+    text-decoration: underline;
 }
 
 .character-info {

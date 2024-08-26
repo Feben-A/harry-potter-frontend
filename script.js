@@ -28,7 +28,7 @@ function showCharacters(data) {
   main.innerHTML = "";
 
   characterArray = data.map((character) => {
-    const { name, image } = character;
+    const { name, image, species, gender, house, dateOfBirth } = character;
 
     const characterEl = document.createElement("div");
     characterEl.classList.add("card");
@@ -41,14 +41,20 @@ function showCharacters(data) {
     characterFront.innerHTML = `
      <img src="${image}" alt="${name}" onerror="handleError(this);"/>
      <div class="character-info">
-     <h3>${name}</h3>
+     <h3> ${name}</h3>
      </div>
      `;
 
     const characterBack = document.createElement("div");
     characterBack.classList.add("back");
     characterBack.innerHTML = `
-     <h1>Back of the card</h1>`;
+    </br>
+     <h2> ${name} </h2>
+  
+     <div class= "capitalize"> <b>Species:</b> <div>${species}</div></div>
+     <div class= "capitalize"> <b>Gender:</b> <div>${gender}</div></div
+     <div><b> House:</b> <div>${house}</div></div>
+     <div> <b> Date Of Birth:</b> <div>${dateOfBirth}</div></div>`;
 
     cardInner.appendChild(characterFront);
     cardInner.appendChild(characterBack);
